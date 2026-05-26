@@ -84,9 +84,9 @@ Visit `http://127.0.0.1:8000/` in your browser.
 
 
 ## Author
-N. Jhansi Mahalakshmi
-B.Tech CSE (AI & ML) — K.V.G. College of Engineering, Sullia |
-Intern @ Dhee Coding Lab, Bengaluru |
+N. Jhansi Mahalakshmi |
+- B.Tech CSE (AI & ML) — K.V.G. College of Engineering, Sullia 
+- Intern @ Dhee Coding Lab, Bengaluru 
 
 
 ## License
