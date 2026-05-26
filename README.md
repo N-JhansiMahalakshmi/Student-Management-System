@@ -3,17 +3,23 @@ A full-stack Student Management System built with Python, Django, and MySQL — 
 
 ## Features
 
-Add new student records
-Edit and update existing student details
-Delete student records
-View all student records in a structured table
-Search and filter students by name or other fields
+- Add new student records
+- Edit and update existing student details
+- Delete student records
+- View all student records in a structured table
+- Search and filter students by name or other fields
 
 
 ## Tech Stack
-LayerTechnologyBackendPython, DjangoFrontendHTML, CSS, JavaScriptDatabaseMySQL / SQLite
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Python, Django |
+| Frontend | HTML, CSS, JavaScript |
+| Database | MySQL / SQLite |
 
 ## Project Structure
+```
 student-management-system/
 │
 ├── students/               # Django app
@@ -27,20 +33,26 @@ student-management-system/
 ├── db.sqlite3              # SQLite database (if used)
 ├── requirements.txt        # Python dependencies
 └── README.md
+```
 
 ## Installation & Setup
 1. Clone the Repository
-bash git clone https://github.com/your-username/student-management-system.git
+```bash
+git clone https://github.com/your-username/student-management-system.git
 cd student-management-system
-2. Create a Virtual Environment
-bashpython -m venv venv
+```
+3. Create a Virtual Environment
+```bash
+python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
+```
 3. Install Dependencies
-bashpip install -r requirements.txt
+``` bash pip install -r requirements.txt ```
 4. Configure Database
-For SQLite (default), no extra setup needed.
-For MySQL, update DATABASES in settings.py:
-pythonDATABASES = {
+For **SQLite** (default), no extra setup needed.
+For **MySQL**, update DATABASES in settings.py:
+```python
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'your_db_name',
@@ -50,20 +62,25 @@ pythonDATABASES = {
         'PORT': '3306',
     }
 }
+```
 5. Run Migrations
-bashpython manage.py makemigrations
+```bash
+python manage.py makemigrations
 python manage.py migrate
+```
 6. Start the Development Server
-bashpython manage.py runserver
-Visit http://127.0.0.1:8000/ in your browser.
+```bash
+python manage.py runserver
+```
+Visit `http://127.0.0.1:8000/` in your browser.
 
 ## Usage
 
-Navigate to the home page to view all student records
-Use the Add Student form to create a new record
-Click Edit on any record to update student details
-Click Delete to remove a student
-Use the Search bar to filter students by name or ID
+- Navigate to the home page to view all student records
+- Use the **Add Student** form to create a new record
+- Click **Edit** on any record to update student details
+- Click **Delete** to remove a student
+- Use the **Search** bar to filter students by name or ID
 
 
 ## Author
