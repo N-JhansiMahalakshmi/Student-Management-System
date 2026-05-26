@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero-section">
+
+    <div class="hero-left">
+
+        <h1>Student Management System</h1>
+
+        <p>
+            Manage student records, departments, courses and reports
+            from one clean dashboard.
+        </p>
+
+        <a href="{% url 'student_list' %}" class="main-btn">
+            <i class="fa-solid fa-users"></i>
+            View Students
+        </a>
+
+        <a href="{% url 'add_student' %}" class="main-btn ms-3">
+            <i class="fa-solid fa-user-plus"></i>
+            Add Student
+        </a>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="/static/images/student-center-logo.png"
+             alt="Student Management System">
+    </div>
+
+</section>
+
+<section class="cards">
+
+    <div class="dashboard-card">
+        <div class="icon blue">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+            <h2>{{ total_students }}</h2>
+            <p>Total Students</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="icon green">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <div>
+            <h2>{{ total_courses }}</h2>
+            <p>Total Courses</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="icon orange">
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+
+        <div>
+            <h2>{{ total_departments }}</h2>
+            <p>Total Departments</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="icon purple">
+            <i class="fa-solid fa-file-lines"></i>
+        </div>
+
+        <div>
+            <h2>{{ total_reports }}</h2>
+            <p>Total Reports</p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

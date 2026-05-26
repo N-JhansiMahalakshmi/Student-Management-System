@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="detail-main-container">
+
+    <a href="{% url 'student_list' %}" class="back-link">
+        &larr; Back to Students
+    </a>
+
+    <h1>Student Details</h1>
+
+    <div class="student-detail-container">
+
+        <div class="student-image">
+
+            {% if student.photo %}
+                <img src="{{ student.photo.url }}" alt="{{ student.full_name }}">
+            {% endif %}
+
+        </div>
+
+        <div class="student-info">
+
+            <p><strong>Full Name</strong><br>
+            {{ student.full_name }}</p>
+
+            <p><strong>Roll Number</strong><br>
+            {{ student.roll_number }}</p>
+
+            <p><strong>Email</strong><br>
+            {{ student.email }}</p>
+
+            <p><strong>Phone</strong><br>
+            {{ student.phone }}</p>
+
+            <p><strong>Department</strong><br>
+            {{ student.department }}</p>
+
+            <p><strong>Course</strong><br>
+            {{ student.course }}</p>
+
+            <p><strong>Year</strong><br>
+            {{ student.year }}</p>
+
+            <p><strong>Date of Birth</strong><br>
+            {{ student.date_of_birth }}</p>
+
+            <div class="detail-buttons">
+
+                <a href="{% url 'edit_student' student.id %}" class="edit-btn">
+                    Edit Student
+                </a>
+
+                <form method="POST"
+                      action="{% url 'delete_student' student.id %}"
+                      class="inline-form">
+                    {% csrf_token %}
+                    <button type="submit"
+                            class="delete-btn-detail"
+                            onclick="return confirm('Delete this student?');">
+                        Delete Student
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

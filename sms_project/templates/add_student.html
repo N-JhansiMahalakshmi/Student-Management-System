@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="form-container">
+
+    <h1>Add New Student</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <div class="form-grid">
+
+            <div>
+                <label>Full Name</label>
+                {{ form.full_name }}
+            </div>
+
+            <div>
+                <label>Roll Number</label>
+                {{ form.roll_number }}
+            </div>
+
+            <div>
+                <label>Email</label>
+                {{ form.email }}
+            </div>
+
+            <div>
+                <label>Phone Number</label>
+                {{ form.phone }}
+            </div>
+
+            <div>
+                <label>Department</label>
+                {{ form.department }}
+            </div>
+
+            <div>
+                <label>Course</label>
+                {{ form.course }}
+            </div>
+
+            <div>
+                <label>Year</label>
+                {{ form.year }}
+            </div>
+
+            <div>
+                <label>Date of Birth</label>
+                {{ form.date_of_birth }}
+            </div>
+
+            <div class="full-width">
+                <label>Student Photo</label>
+                {{ form.photo }}
+            </div>
+
+        </div>
+
+        <button type="submit" class="save-btn">
+            Save Student
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
