@@ -82,6 +82,17 @@ Visit `http://127.0.0.1:8000/` in your browser.
 - Click **Delete** to remove a student
 - Use the **Search** bar to filter students by name or ID
 
+## Screenshots
+
+### Homepage 
+<img width="1918" height="917" alt="image" src="https://github.com/user-attachments/assets/7710da5f-455f-4033-b43e-a4b6b6cb4343" />
+### Student List
+<img width="1917" height="961" alt="image" src="https://github.com/user-attachments/assets/cade9ca8-dd45-4f0b-9e70-aadce8475476" />
+### Add student
+<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/7c4a4b7f-0bef-4c0e-8e91-8676ae80e4af" />
+### About Page
+<img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/ba8ca372-2210-41a3-b63a-fdfaa9995e08" />
+
 
 ## Author
 N. Jhansi Mahalakshmi |
