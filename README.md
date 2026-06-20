@@ -91,7 +91,7 @@ Visit `http://127.0.0.1:8000/` in your browser.
 <img width="1917" height="961" alt="image" src="https://github.com/user-attachments/assets/cade9ca8-dd45-4f0b-9e70-aadce8475476" />
 
 ### Add Student
-<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/7c4a4b7f-0bef-4c0e-8e91-8676ae80e4af" />4
+<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/7c4a4b7f-0bef-4c0e-8e91-8676ae80e4af" />
 
 ### About Page
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/ba8ca372-2210-41a3-b63a-fdfaa9995e08" />
